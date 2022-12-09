@@ -16,5 +16,20 @@ namespace CapaVisual
         {
             InitializeComponent();
         }
+
+        private void BtnComprar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Guardar seleccion probablemente
+                ComprarUsuario comprar = new ComprarUsuario();
+                comprar.Show();
+                Hide();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

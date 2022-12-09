@@ -20,10 +20,10 @@ namespace CapaVisual
 
         private void BtnIniciarSesion_Click(object sender, EventArgs e)
         {
-            Autenticacion APIAuth = new Autenticacion();
             try
             {
-                Autenticacion.Verificar(TxtBoxEmail.Text, TxtBoxPassword.Text);
+                Autenticacion autenticacion = new Autenticacion();
+                autenticacion.Verificar(TxtBoxEmail.Text, TxtBoxPassword.Text);
                 ProductosUsuario productos = new ProductosUsuario();
                 productos.Show();
                 Hide();
