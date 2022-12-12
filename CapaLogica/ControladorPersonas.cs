@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaDeDatos
+namespace CapaLogica
 {
-    class Persona
+    public class ControladorPersonas
     {
         
+        public void VerificarUsuario(string json)
+        {
+
+        }
     }
 }

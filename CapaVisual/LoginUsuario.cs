@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
 using APIAutenticacion;
 
 namespace CapaVisual
@@ -20,16 +21,20 @@ namespace CapaVisual
 
         private void BtnIniciarSesion_Click(object sender, EventArgs e)
         {
+            string[] credenciales = new string[2] { TxtBoxEmail.Text, TxtBoxPassword.Text };
+            string json = JsonSerializer.Serialize<Array>(credenciales);
+            
             try
             {
                 Autenticacion autenticacion = new Autenticacion();
-                autenticacion.Verificar(TxtBoxEmail.Text, TxtBoxPassword.Text);
+                autenticacion.Verificar(json);
                 ProductosUsuario productos = new ProductosUsuario();
                 productos.Show();
                 Hide();
             }
             catch (Exception ex)
             {
+                MessageBox.Show("Error" + ex.Message);
                 Console.WriteLine(ex.Message);
             }
 

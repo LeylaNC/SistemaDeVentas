@@ -9,14 +9,13 @@ namespace CapaDeDatos
 {
     class Modelo
     {
-        string connectionString = @""+
-            "server=localhost;" +
-            "user id=user;" +
-            "password=12345678;" +
-            "database=database";
+
         private void Conectar()
         {
-            MySqlConnection connection = new MySqlConnection(connectionString);
+            MySqlConnection connection = new MySqlConnection( @""+
+            "server=localhost;" +
+            "user id=root;" +
+            "database=sistemaDeVentas");
             connection.Open();
         }
     }
