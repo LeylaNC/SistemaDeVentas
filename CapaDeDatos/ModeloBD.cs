@@ -7,10 +7,10 @@ using MySql.Data.MySqlClient;
 
 namespace CapaDeDatos
 {
-    class Modelo
+    class ModeloBD
     {
 
-        private void Conectar()
+        public void Conectar()
         {
             MySqlConnection connection = new MySqlConnection( @""+
             "server=localhost;" +

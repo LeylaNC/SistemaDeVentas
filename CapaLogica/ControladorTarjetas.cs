@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaDeDatos
+namespace CapaLogica
 {
-    class Productos
+    public class ControladorTarjetas
     {
+        //IngresarTarjeta
+
+        //GetTarjetas
     }
 }

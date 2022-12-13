@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControladorPersonas.cs" />
+    <Compile Include="Sesiones.cs" />
+    <Compile Include="ControladorTarjetas.cs" />
+    <Compile Include="ControladorUsuarios.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,10 +37,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modelo.cs" />
-    <Compile Include="Persona.cs" />
-    <Compile Include="Productos.cs" />
-    <Compile Include="Ventas.cs" />
+    <Compile Include="ModeloBD.cs" />
+    <Compile Include="ModeloPersonas.cs" />
+    <Compile Include="ModeloProductos.cs" />
+    <Compile Include="ModeloUsuario.cs" />
+    <Compile Include="ModeloVentas.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
