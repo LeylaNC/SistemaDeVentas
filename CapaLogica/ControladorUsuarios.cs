@@ -9,6 +9,7 @@ namespace CapaLogica
 {
     public class ControladorUsuarios
     {
+        //Iniciar sesion
         //Get datos usuario
         //Ingresar usuario
         //Eliminar usuario

@@ -1,0 +1,9 @@
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.exe.config
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.ComprarUsuario.resources
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.LoginUsuario.resources
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.ProductosUsuario.resources
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.RegistrarTarjetaUsuario.resources
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.Usuario.resources
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\SistemaDeVentas\CapaVisual\obj\Debug\CapaVisual.csproj.CoreCompileInputs.cache

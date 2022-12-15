@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaLogica;
 
 namespace APIProductosVentas
 {
@@ -18,9 +19,13 @@ namespace APIProductosVentas
             //ComboBoxTarjeta.Text to Json ig
         }
 
-        public void SeleccionarProductos()
-        {
-            //DataGridView to Json ig
+        public void CargarTablaProductos()
+        {  
+            
+            ControladorProductos controladorProducto = new ControladorProductos();
+            string jProductos = controladorProducto.;
+            //
+            //return jProductos;
         }
         public void Comprar()
         {

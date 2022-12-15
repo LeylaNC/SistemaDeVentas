@@ -1,0 +1,2 @@
+C:\Users\PC\source\repos\SistemaDeVentas\CapaLogica\obj\Debug\CapaLogica.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\SistemaDeVentas\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache

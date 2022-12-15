@@ -16,13 +16,13 @@ namespace CapaLogica
             {
                 ModeloPersonas modeloPersonas = new ModeloPersonas();
                 modeloPersonas.VerificarUsuario(json);
-                Sesiones controladorSesiones = new Sesiones();
-                controladorSesiones.IniciarSesion();
+                IniciarSesion();
             }
             catch (Exception ex)
             {
                 
             }
+
             //ControladorSesion
 
             //using MySqlDataReader rdr = cmd.ExecuteReader();
@@ -30,6 +30,16 @@ namespace CapaLogica
             //credenciales = get users email & passwords where email == and passw == 
             //msgbox
             //else ControladorSesion sesionactual = new ControladorSesion (credenciales)
+        }
+
+        private void IniciarSesion()
+        {
+            //ControladorUsuarios controladorUsuario = new ControladorUsuarios();
+            //controladorUsuario.IniciarSesion();
+            //o
+            //ControladorSesiones controladorSesion = new ControladorSesiones();
+            //controladorSesion.IniciarSesion();
+            
         }
 
         //VerificarAdministrador(string email, string password)
