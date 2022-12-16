@@ -43,6 +43,12 @@
     <Compile Include="ComprarUsuario.Designer.cs">
       <DependentUpon>ComprarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginBackoffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginBackoffice.Designer.cs">
+      <DependentUpon>LoginBackoffice.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <EmbeddedResource Include="ComprarUsuario.resx">
       <DependentUpon>ComprarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginBackoffice.resx">
+      <DependentUpon>LoginBackoffice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginUsuario.resx">
       <DependentUpon>LoginUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +140,10 @@
     <ProjectReference Include="..\APIProductosVentas\APIProductosVentas.csproj">
       <Project>{a31960e4-bfce-4896-86ef-037492141ccb}</Project>
       <Name>APIProductosVentas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{b232041d-bf4b-4024-9c29-b75d6e4df959}</Project>
+      <Name>CapaLogica</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

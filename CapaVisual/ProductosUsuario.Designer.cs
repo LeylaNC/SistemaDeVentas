@@ -31,12 +31,23 @@
             this.DataGridViewProductos = new System.Windows.Forms.DataGridView();
             this.BtnCerrarSesion = new System.Windows.Forms.Button();
             this.BtnComprar = new System.Windows.Forms.Button();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // DataGridViewProductos
             // 
             this.DataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdProducto,
+            this.NombreProducto,
+            this.Descripcion,
+            this.Precio,
+            this.Cantidad});
             this.DataGridViewProductos.Location = new System.Drawing.Point(12, 26);
             this.DataGridViewProductos.Name = "DataGridViewProductos";
             this.DataGridViewProductos.Size = new System.Drawing.Size(582, 361);
@@ -64,6 +75,31 @@
             this.BtnComprar.UseVisualStyleBackColor = true;
             this.BtnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
             // 
+            // IdProducto
+            // 
+            this.IdProducto.HeaderText = "Id";
+            this.IdProducto.Name = "IdProducto";
+            // 
+            // NombreProducto
+            // 
+            this.NombreProducto.HeaderText = "Nombre";
+            this.NombreProducto.Name = "NombreProducto";
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripción";
+            this.Descripcion.Name = "Descripcion";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.Name = "Cantidad";
+            // 
             // ProductosUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -85,5 +121,10 @@
         private System.Windows.Forms.DataGridView DataGridViewProductos;
         private System.Windows.Forms.Button BtnCerrarSesion;
         private System.Windows.Forms.Button BtnComprar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
     }
 }

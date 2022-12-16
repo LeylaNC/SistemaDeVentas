@@ -23,14 +23,26 @@ namespace CapaLogica
                 
             }
 
-            //ControladorSesion
+            public void VerificarAdministrador(string email, string password)
+            {
+                try
+                {
+                    ModeloPersonas modeloPersonas = new ModeloPersonas();
+                    modeloPersonas.VerificarAdministrador(email, password);
+                }
+                catch (Exception ex)
+                {
 
-            //using MySqlDataReader rdr = cmd.ExecuteReader();
+                }
 
-            //credenciales = get users email & passwords where email == and passw == 
-            //msgbox
-            //else ControladorSesion sesionactual = new ControladorSesion (credenciales)
-        }
+                //ControladorSesion
+
+                //using MySqlDataReader rdr = cmd.ExecuteReader();
+
+                //credenciales = get users email & passwords where email == and passw == 
+                //msgbox
+                //else ControladorSesion sesionactual = new ControladorSesion (credenciales)
+            }
 
         private void IniciarSesion()
         {

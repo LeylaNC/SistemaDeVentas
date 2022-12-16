@@ -21,10 +21,12 @@ namespace CapaDeDatos
 
         public void VerificarUsuario(string json)
         {
-            //string json to Email, HPassword
+            string[] credenciales = JsonSerializer. <Array>(json);
+
+            //string json to Email, HPassword en controlador
 
             ModeloBD modeloBD = new ModeloBD();
-            modeloBD.Conectar();
+            modeloBD.Open();
 
             MySqlCommand command = new MySqlCommand();
             command.CommandText =
@@ -48,9 +50,6 @@ namespace CapaDeDatos
                 EsAdmin = reader.GetBoolean(8);
 
             }
-            //credenciales = EmailHPassword to json
-            //string[] credenciales = new string[2] { Email, HPassword };
-            //string json = JsonSerializer.Serialize<Array>(credenciales);
         }
     }
 }

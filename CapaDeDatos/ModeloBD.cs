@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace CapaDeDatos
 {
@@ -36,6 +37,40 @@ namespace CapaDeDatos
         {
             connection.Close();
             connection.Dispose();
+        }
+
+        //
+        public DataSet ExecuteDataSet(string sql)
+        {
+            try
+            {
+                DataSet dataSet = new DataSet();
+                MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sql, connection);
+                dataAdapter.Fill(dataSet, "result");
+                return dataSet;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return null;
+        }
+
+        //
+        public MySqlDataReader ExecuteReader(string sql)
+        {
+            try
+            {
+                MySqlDataReader reader;
+                MySqlCommand cmd = new MySqlCommand(sql, connection);
+                reader = cmd.ExecuteReader();
+                return reader;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return null;
         }
     }
 }

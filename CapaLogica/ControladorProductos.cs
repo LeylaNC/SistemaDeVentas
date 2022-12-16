@@ -11,15 +11,17 @@ namespace CapaLogica
     public class ControladorProductos
     {
 
-        public string function GetProductos()
+        public string GetProductos()
         {
             ModeloProductos modeloProducto = new ModeloProductos();
             modeloProducto.GetProductos();
             var ListaProductos = modeloProducto.ListaProductos;
 
-            var opt = new JsonSerializerOptions() { WriteIndented = true };
+
+            JsonSerializerOptions opt = new JsonSerializerOptions() { WriteIndented = true };
             string strJson = JsonSerializer.Serialize<IList<ModeloProductos>>(ListaProductos, opt);
             return strJson;
+            ;
         }
     }
 }

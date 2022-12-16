@@ -19,12 +19,12 @@ namespace APIProductosVentas
             //ComboBoxTarjeta.Text to Json ig
         }
 
-        public void CargarTablaProductos()
+        public string CargarTablaProductos()
         {  
             
             ControladorProductos controladorProducto = new ControladorProductos();
-            string jProductos = controladorProducto.;
-            //
+            string jProductos = controladorProducto.GetProductos();
+            return jProductos;
             //return jProductos;
         }
         public void Comprar()
